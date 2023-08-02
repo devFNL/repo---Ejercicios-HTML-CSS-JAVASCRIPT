@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 8. Escribir un programa que lea números enteros hasta teclear 0 (cero). Al finalizar el
+programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
+todos ellos.  -->
+    <script>
+      let num;
+      let cont = 0;
+      let suma = 0;
+      let max = 0;
+      let min;
+
+      do {
+        num = parseInt(prompt("Ingrese numeros"));
+        if (num !== 0) {
+          if (num < min) {
+            min = num;
+          }
+          if (num > max) {
+            max = num;
+          }
+          suma += num;
+          cont++;
+        }
+      } while (num !== 0);
+
+      let prom = suma / cont;
+      console.log("Num Max: " + max);
+      console.log("Num Min: " + min);
+      console.log("El promedio es: " + prom);
+    </script>
+  </body>
+</html>

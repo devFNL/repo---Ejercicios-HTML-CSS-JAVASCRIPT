@@ -1,0 +1,35 @@
+.container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+th[scope="col"] {
+  font-weight: bold;
+  background-image: url(fondo_gris.gif);
+  padding: 5px; /* Ajusta el espaciado alrededor del texto */
+}
+
+th[scope="row"] {
+  font-weight: bold;
+  background-color: #e6f3ff; /* Color gris para el fondo */
+  padding: 5px; /* Ajusta el espaciado alrededor del texto */
+  text-align: left;
+}
+
+tr:nth-child(odd) td {
+  background-color: white;
+}
+
+tr:nth-child(even) td {
+  background-color: #ffffcc;
+}

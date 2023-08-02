@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>ejex1</title>
+    <style>
+        .custom-bullet {
+          list-style-type: none;
+          padding-left: 0;
+        }
+    
+        .custom-bullet li:before {
+          content: "\2022";
+          color: #ff9900;
+          font-size: 1.2rem;
+          margin-right: 8px;
+        }
+      </style>
+  </head>
+  <body>
+    
+    <div class="container p-3">
+
+      <ol class="list-group custom-bullet">
+
+        <li class="list-group-item">Primer item</li>
+        <li class="list-group-item">Segundo item</li>
+        <li class="list-group-item">Tercer item</li>
+        <li class="list-group-item">Cuarto item</li>
+        <li class="list-group-item">Quinto item</li>
+
+      </ol>
+      
+        <div class="conta p-5 me-auto position-relative start-50">
+          
+            <ol class="list-group w-50">
+
+                <li class="list-group-item">
+                    <div class="ms-2 me-auto text-center">
+                        <div class="fw-bold text-center">Links útiles</div>
+                        Click en el enlance para ir
+                    </div>
+                </li>
+
+            </ol>
+            
+            <div class="list-group w-50">
+
+                <a href="https://stackoverflow.com/" class="list-group-item list-group-item-action list-group-item-primary text-center">Stack Overflow</a>
+                <a href="https://developer.mozilla.org/es/" class="list-group-item list-group-item-action list-group-item-secondary text-center">MDN</a>
+                <a href="https://www.codewars.com/" class="list-group-item list-group-item-action list-group-item-danger text-center">Codewars</a>
+                <a href="https://chat.openai.com/" class="list-group-item list-group-item-action list-group-item-success text-center">OpenAI</a>
+                <a href="https://bard.google.com/" class="list-group-item list-group-item-action list-group-item-warning text-center">Bard</a>
+                
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

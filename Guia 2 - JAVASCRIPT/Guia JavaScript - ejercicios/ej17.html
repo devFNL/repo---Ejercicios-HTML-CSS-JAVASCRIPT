@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 17. Realizar un programa que elimine los dos últimos elementos de un array. Mostrar el
+resultado -->
+    <script>
+      let frutas = ["Manzana", "Banana", "Naranja", "Frutilla", "Melon"];
+
+      function eliminar(arr) {
+        arr.pop();
+        arr.pop();
+        return arr;
+      }
+      console.log(frutas);
+      eliminar(frutas);
+      console.log(frutas);
+    </script>
+  </body>
+</html>

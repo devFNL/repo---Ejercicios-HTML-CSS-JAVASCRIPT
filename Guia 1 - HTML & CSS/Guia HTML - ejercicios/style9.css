@@ -1,0 +1,58 @@
+#titulo {
+  color: darkcyan;
+}
+
+#subtitulo {
+  color: blue;
+}
+
+.destacado {
+  color: goldenrod;
+}
+
+#especial1 {
+  color: hotpink;
+}
+
+#adicional p {
+  color: olive;
+}
+
+#adicional a {
+  color: green;
+}
+
+p strong {
+  color: crimson;
+}
+p em {
+  color: blue;
+}
+p a {
+  color: crimson;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+td strong {
+  color: goldenrod;
+}
+
+.especial {
+  color: goldenrod;
+}
+
+.tdmisc {
+  color: darkgreen;
+}
+
+.thextra {
+  color: red;
+}

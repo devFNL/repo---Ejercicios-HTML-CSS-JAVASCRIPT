@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 19. Realizar un programa en Java donde se creen dos arreglos: el primero será un arreglo A
+de 50 números reales, y el segundo B, un arreglo de 20 números, también reales. El
+programa deberá inicializar el arreglo A con números aleatorios y mostrarlo por pantalla.
+Luego, el arreglo A se debe ordenar de menor a mayor y copiar los primeros 10 números
+ordenados al arreglo B de 20 elementos, y rellenar los 10 últimos elementos con el valor
+0.5. Mostrar los dos arreglos resultantes: el ordenado de 50 elementos y el combinado
+de 20.  -->
+    <script>
+      let a1 = [];
+      let a2 = [];
+
+      for (let i = 0; i < 50; i++) {
+        a1.push(Math.round(Math.random() * 9));
+      }
+
+      console.log("Array 1 original: " + a1);
+
+      a1.sort(function (a, b) {
+        return a - b;
+      });
+      console.log("Array 1 ordenado: " + a1);
+
+      a2.push(a1.slice(0, 10));
+
+      for (let i = 0; i < 10; i++) {
+        a2.push(0.5);
+      }
+
+      console.log("Array 2: " + a2);
+    </script>
+  </body>
+</html>

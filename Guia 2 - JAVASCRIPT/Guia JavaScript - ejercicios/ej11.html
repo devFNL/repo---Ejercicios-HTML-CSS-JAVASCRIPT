@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 11. Escribir una función que reciba un String y devuelva la palabra más larga.
+String Ejemplo: “Guia de JavaScript”
+Resultado esperado : “JavaScript -->
+    <script>
+      let frase = prompt("Ingrese una frase");
+
+      function palabraMasLarga(frase) {
+        let palabras = frase.split(" ");
+        let palabraMasLarga = "";
+        for (let i = 0; i < palabras.length; i++) {
+          if (palabras[i].length > palabraMasLarga.length) {
+            palabraMasLarga = palabras[i];
+          }
+        }
+        return palabraMasLarga;
+      }
+      console.log(palabraMasLarga(frase));
+    </script>
+  </body>
+</html>
