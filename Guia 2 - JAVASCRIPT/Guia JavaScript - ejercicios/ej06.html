@@ -13,12 +13,16 @@ En caso de que el valor ingresado sea 0, se debe mostrar “el número no es par
       let num = parseInt(prompt("Ingrese un numero"));
       // if (num % 2 == 0) {
       //   console.log("El numero es par");
+      // } else if (num == 0) {
+      //   console.log("El numero no es par ni inpar, es 0");
       // } else {
-      //   console.log("El numero es impar");
+      //  console.log("El numero es impar")
       // }
-      num % 2 == 0
-        ? console.log("El numero es par")
-        : console.log("El numero es impar");
+      num === 0
+        ? console.log("El número no es par ni impar")
+        : num % 2 === 0
+        ? console.log("El número es par")
+        : console.log("El número es impar");
     </script>
   </body>
 </html>

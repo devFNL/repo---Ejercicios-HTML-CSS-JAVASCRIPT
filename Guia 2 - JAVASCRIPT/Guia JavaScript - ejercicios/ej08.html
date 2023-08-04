@@ -15,17 +15,19 @@ todos ellos.  -->
       let cont = 0;
       let suma = 0;
       let max = 0;
-      let min;
+      let min = Infinity;
 
       do {
         num = parseInt(prompt("Ingrese numeros"));
         if (num !== 0) {
-          if (num < min) {
-            min = num;
-          }
-          if (num > max) {
-            max = num;
-          }
+          // if (num < min) {
+          //   min = num;
+          // }
+          // if (num > max) {
+          //   max = num;
+          // }
+          max = Math.max(max, num);
+          min = Math.min(min, num);
           suma += num;
           cont++;
         }

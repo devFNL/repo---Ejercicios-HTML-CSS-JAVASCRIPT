@@ -17,23 +17,19 @@ o ‘m’ para la multiplicación y ‘D’ o ‘d’ para la división.  -->
       let num2 = parseInt(prompt("Ingrese el valor del segundo numero"));
       let opc = prompt(
         "Ingrese una opcion para realizar una operacion: \nS = Sumar \nR = Restar \nM = Multiplicar \nD = Dividir"
-      );
+      ).toUpperCase();
 
       switch (opc) {
         case "S":
-        case "s":
           console.log("La suma es: " + (num1 + num2));
           break;
         case "R":
-        case "r":
           console.log("La resta es: " + (num1 - num2));
           break;
         case "M":
-        case "m":
           console.log("La multiplicacion es: " + num1 * num2);
           break;
         case "D":
-        case "d":
           console.log("La divicion es: " + num1 / num2);
           break;
       }
