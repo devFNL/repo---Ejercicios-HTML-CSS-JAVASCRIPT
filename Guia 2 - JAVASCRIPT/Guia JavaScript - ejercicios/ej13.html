@@ -10,21 +10,24 @@
     <!-- 13. Crear un objeto persona, con las propiedades nombre, edad, sexo ('H' hombre, 'M' mujer,
 'O' otro), peso y altura. A continuación, muestre las propiedades del objeto JavaScript. -->
     <script>
+      let pers = {
+        nombre: "Rosa",
+        edad: 54,
+        sexo: "M",
+        peso: 74,
+        altura: 1.67,
+      };
+
+      console.log(pers);
+
       let persona = new Object();
       persona.nombre = "Federico";
       persona.edad = 30;
       persona.sexo = "H";
       persona.peso = 80;
       persona.altura = 1.7;
-      persona.signoZodiaco = "Leo";
 
       console.log(persona);
-
-      let auto = new Object();
-      auto.marca = "Ford";
-      auto.modelo = 2019;
-
-      console.log(auto);
     </script>
   </body>
 </html>

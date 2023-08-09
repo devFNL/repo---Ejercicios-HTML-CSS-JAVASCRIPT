@@ -13,24 +13,28 @@ numéricos enteros. El usuario, además, debe especificar la operación con el p
 carácter de la operación que desea realizar: ‘S' o ‘s’ para la suma, ‘R’ o ‘r’ para la resta, ‘M’
 o ‘m’ para la multiplicación y ‘D’ o ‘d’ para la división.  -->
     <script>
-      let num1 = parseInt(prompt("Ingrese el valor del primer numero"));
-      let num2 = parseInt(prompt("Ingrese el valor del segundo numero"));
+      let num1 = parseInt(prompt("Ingrese el valor del primer número"));
+      let num2 = parseInt(prompt("Ingrese el valor del segundo número"));
       let opc = prompt(
-        "Ingrese una opcion para realizar una operacion: \nS = Sumar \nR = Restar \nM = Multiplicar \nD = Dividir"
+        "Ingrese una opción para realizar una operación: \nS = Sumar \nR = Restar \nM = Multiplicar \nD = Dividir"
       ).toUpperCase();
 
       switch (opc) {
         case "S":
-          console.log("La suma es: " + (num1 + num2));
+          // console.log("La suma es: " + (num1 + num2));
+          console.log(`La suma es: ${num1 + num2}`);
           break;
         case "R":
-          console.log("La resta es: " + (num1 - num2));
+          // console.log("La resta es: " + (num1 - num2));
+          console.log(`La resta es: ${num1 - num2}`);
           break;
         case "M":
-          console.log("La multiplicacion es: " + num1 * num2);
+          // console.log("La multiplicación es: " + num1 * num2);
+          console.log(`La multiplicación es: ${num1 * num2}`);
           break;
         case "D":
-          console.log("La divicion es: " + num1 / num2);
+          // console.log("La división es: " + num1 / num2);
+          console.log(`La división es: ${num1 / num2}`);
           break;
       }
     </script>

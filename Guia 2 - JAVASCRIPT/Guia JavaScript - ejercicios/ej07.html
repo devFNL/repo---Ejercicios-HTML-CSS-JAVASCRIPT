@@ -11,17 +11,18 @@
     solicite números al usuario hasta que la suma de los números introducidos supere el
     límite inicial.  -->
     <script>
-      let max = parseInt(prompt("Ingrese un numero limite"));
+      let max = parseInt(prompt("Ingrese un número limite"));
       let suma = 0;
 
       while (suma < max) {
         let num = parseInt(
-          prompt("Ingrese numeros, se detendra cuando llegue al limite")
+          prompt("Ingrese números, se detendrá cuando llegue al límite")
         );
         suma += num;
       }
 
-      console.log("Llegaste al limite! (" + max + ")");
+      // console.log("Llegaste al límite! (" + max + ")");
+      console.log(`Llegaste al límite! (${max})`);
     </script>
   </body>
 </html>

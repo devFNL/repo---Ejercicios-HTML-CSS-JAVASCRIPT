@@ -7,9 +7,12 @@ function calcular(event) {
   let area = Math.PI * Math.pow(radio, 2);
   let perimetro = 2 * Math.PI * radio;
 
-  console.log("El radio es: " + radio);
-  console.log("El área es: " + area);
-  console.log("El perímetro es: " + perimetro);
+  // console.log("El radio es: " + radio);
+  console.log(`El radio es: ${radio}`);
+  // console.log("El área es: " + area);
+  console.log(`El área es: ${area}`);
+  // console.log("El perímetro es: " + perimetro);
+  console.log(`El perímetro es: ${perimetro}`);
 }
 
 $form.addEventListener("submit", calcular);
